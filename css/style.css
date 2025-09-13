@@ -1,0 +1,191 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #509ca7, #ffffff);
+}
+
+main{
+    margin-bottom: 70px;
+}
+.titulo {
+    color: white;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    background-color: rgb(63, 75, 233);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+    background-color: rgb(60, 121, 121);
+    color: black;
+}
+
+footer.contacto {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: black;
+    padding: 15px 0;
+}
+h3{
+    text-decoration: underline;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin: 130px;
+    width: 40%;
+    gap: 10px;
+    padding: 10px;
+    background-color: 509ca7;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.2) ;
+    box-shadow: 0 4px 10px;
+    text-decoration: none;
+    
+}
+
+.subtitulo1{
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration-line: underline;
+    
+}
+.texto{
+    padding: 35px;
+    left: 1px;
+}
+
+.Us{
+    font-size: 16px;
+    color: #333;
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: justify;
+    padding: 15px 20px;
+}
+.about-us{
+    font-size: 20px;
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.viajespmundo{
+    width: 80%;
+}
+
+.back{
+    padding: 40px;
+}
+
+
+.galery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: auto;
+    position: relative;
+    border: 1px solid grey;
+    width: 100%;
+    
+}
+.galery img{
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.galery img:hover{
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+@media (max-width:1024px){
+    .galery{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(max-width:768px){
+    .galery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width:400px){
+    .galery{
+        grid-template-columns: 1fr;
+    }
+}
+
+.testimonioprincipal{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+.bodyshop{
+    background-image: url(../img/fondotienda.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container-fluid{
+    background: linear-gradient(to bottom, #6c8d92, #ffffff);
+}
+
+.derechos{
+    font-size: 13px;
+    color: #777;
+    margin-top: 15px;
+    text-align: center;
+    
+}
