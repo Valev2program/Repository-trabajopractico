@@ -1,46 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
-<body>
-        <header>
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-    <a class="navbar-brand" href="#">Destinos</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/planviaje.html">Plan de Viaje</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Más opciones
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="./pages/tienda.html">Tienda</a></li>
-            <li><a class="dropdown-item" href="./pages/testimonios.html">Testimonios</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="./pages/blog.html">Blog</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
 
-        <footer>
-          <a class="back" href="../index.html">Volver atrás</a>
-        </footer>  
-        </header>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Destinos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body class="parallax">
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Viajes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/planviaje.html">Plan de Viaje</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Más opciones
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../pages/tienda.html">Tienda</a></li>
+                <li><a class="dropdown-item" href="../pages/testimonios.html">Testimonios</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="../pages/blog.html">Blog</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="subtitle1">Bienvenidos a la sección de Destinos.</h1>
+    <h2 class="subtitle2">Aquí podrás encontrar algunos destinos con sus respectivos precios</h2>
+    <div class="cards-container">
+    <div class="card" style="width: 18rem;">
+        <img src="../img/Mallorca.jpg" class="card-img-top" alt="Palma De Mallorca">
+        <div class="card-body">
+            <h5 class="card-title">Palma De Mallorca, España</h5>
+            <p class="card-text">Mallorca es conocida por su gran diversidad de paisajes montañosos y acantilados. Uno de estos es la sierra Tramontana.</p>
+            <p>Precios desde €800</p>
+            <a href="./tienda.html" class="btn btn-primary">Ver detalles</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="../img/París.jpg" class="card-img-top" alt="París">
+        <div class="card-body">
+            <h5 class="card-title">París, Francia</h5>
+            <p class="card-text">Es conocida por sus emblemáticos monumentos, su arte y moda de renombre mundial, su cultura de cafés y su encanto romántico.</p>
+            <p>Precios desde €800</p>
+            <a href="./tienda.html" class="btn btn-primary">Ver detalles</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="../img/iguazú.jpg" class="card-img-top" alt="Cataratas del Iguazú">
+        <div class="card-body">
+            <h5 class="card-title">Cataratas del Iguazú, Argentina</h5>
+            <p class="card-text">Es conocida por sus impresionantes saltos de agua y su entorno natural único.</p>
+            <p>Precios desde $300.000</p>
+            <a href="./tienda.html" class="btn btn-primary">Ver detalles</a>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
