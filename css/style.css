@@ -206,12 +206,29 @@ h3{
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 .hero-tienda{
     text-align: center;
     text-decoration: underline;
     font-size: 20px;
     text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
-    
-
 }
+
+.texto-arco{
+    color: black;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+.texto-arco1{
+    color: black;
+    text-decoration: underline;
+}
+.cataratas-text1{
+    color: black;
+    text-decoration: underline;
+}
+.cataratas-text2{
+    color: black;
+    text-shadow: 2px 2px 5px;
+}
+
