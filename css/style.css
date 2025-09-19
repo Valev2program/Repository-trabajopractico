@@ -110,8 +110,6 @@ h3{
 .back{
     padding: 40px;
 }
-
-
 .galery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -152,16 +150,6 @@ h3{
         grid-template-columns: 1fr;
     }
 }
-
-.testimonioprincipal{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 40px 20px;
-    text-align: center;
-}
-
 .hero{
     display: flex;
     flex-direction: column;
@@ -193,8 +181,9 @@ h3{
 }
 .subtitle1{
     text-decoration: underline;
-    color: white;
+    color: rgb(205, 209, 190);
     text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    text-align: center;
 }
 .subtitule2{
     color: white;
@@ -231,4 +220,130 @@ h3{
     color: black;
     text-shadow: 2px 2px 5px;
 }
+.background-blog{
+    background-image: url(../img/blog.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.card-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: flex-start;
+}
+.text-blog{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(14, 2, 2, 0.863);
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+.text-blog:hover{
+    color: #0e1a22;
+    cursor: pointer;
+}
+.text-blog2{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
 
+.Formulary-blog{
+    display: flex;
+    align-items: center;   
+    gap: 15px;             
+    justify-content: center; 
+    flex-wrap: wrap;       
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+.Formulary-blog label{
+    font-weight: bold;
+    color: #000000;
+}
+.Formulary-blog button:hover{
+    background-color: #005fa3;
+    transform: translateY(-2px);
+}
+.body-testimonios{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.h1-testimonio{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #222;
+}
+.testimonioprincipal{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 800px;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 5px 0 0;
+}
+@media(min-width: 768px) {
+    .testimonioprincipal {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+.plan{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card-plan{
+    background-color: #7baac9;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 auto;
+    overflow: hidden;
+    transition: transform 0.3s, box shadow 0.3s;
+}
+.plan-content{
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #555;
+}
+.precio{
+    font-weight: bold;
+    color: #503030;
+}
+/* Opcional: responsive */
+@media (max-width: 500px) {
+    .card-plan {
+        max-width: 90%;
+    }
+}
+.cards-plan-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+@media (max-width: 900px) {
+    .card {
+        flex: 1 1 45%; /* dos cards por fila */
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        flex: 1 1 90%; /* una card por fila */
+    }
+}
