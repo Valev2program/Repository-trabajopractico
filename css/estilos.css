@@ -1,0 +1,45 @@
+.galery img {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.galery img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  font-family: "Franklin Ghotic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #509ca7, #ffffff);
+}
+
+main {
+  margin-bottom: 70px;
+}
+
+.titulo {
+  color: white;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  background-color: rgb(63, 75, 233);
+  font-family: "Franklin Ghotic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+  padding: 10px 0;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: 0.3s;
+  background-color: rgb(60, 121, 121);
+  color: black;
+}
+
+/*# sourceMappingURL=estilos.css.map */

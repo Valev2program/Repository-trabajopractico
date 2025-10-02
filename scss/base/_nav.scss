@@ -1,0 +1,48 @@
+$color-primario: rgb(63, 75, 233);
+$color-hover: rgb(60, 121, 121);
+$font-main: 'Franklin Ghotic Medium', 'Arial Narrow', Arial, sans-serif;
+$color-fondo: linear-gradient(to bottom, #509ca7, #ffffff);
+$color-texto: black;
+
+body{
+    font-family: $font-main;
+    margin: 0;
+    padding: 0;
+    background: $color-fondo;
+    color: $color-texto;
+}
+
+main{
+    margin-bottom: 70px;
+}
+.titulo{
+    color: white;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    background-color: $color-primario;
+    font-family: $font-main;
+}
+nav{
+    ul{
+       display: flex;
+       gap: 20px;
+       justify-content: center;
+       list-style: none;
+       padding: 10px 0; 
+        
+       li{
+        a{
+            &:hover{
+                text-decoration: none;
+                padding: 8px 12px;
+                border-radius: 5px;
+                transition: 0.3s;
+                background-color: $color-hover;
+                color: black;
+                }
+            }
+        }
+    }
+}
+
