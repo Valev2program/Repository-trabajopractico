@@ -1,0 +1,7 @@
+@use "variables" as v;
+
+header {
+  background-color: v.$color-principal;
+  color: #fff;
+  padding: v.$padding-general;
+}

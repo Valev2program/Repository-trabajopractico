@@ -1,0 +1,7 @@
+@use "variables" as v;
+
+.testimonio {
+  border-left: 4px solid v.$color-principal;
+  padding: v.$padding-general;
+  margin-bottom: v.$margin-general;
+}

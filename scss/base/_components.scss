@@ -1,0 +1,24 @@
+@use "variables" as v;
+
+.button {
+  padding: v.$padding-general;
+  border-radius: v.$border-radius;
+  font-family: v.$fuente-principal;
+  color: v.$color-principal;
+  background-color: #fff;
+  border: 1px solid v.$color-principal;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    color: v.$color-secundario;
+    border-color: v.$color-secundario;
+  }
+}
+
+.card {
+  border-radius: v.$border-radius;
+  padding: v.$padding-general;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}

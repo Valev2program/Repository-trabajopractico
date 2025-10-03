@@ -1,9 +1,14 @@
-.galery img {
-  transition: transform 0.3s, box-shadow 0.3s;
+.button {
+  background-color: #509ca7;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
-.galery img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+.button:hover {
+  background-color: #2a7a8c;
 }
 
 body {
@@ -11,6 +16,7 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(to bottom, #509ca7, #ffffff);
+  color: black;
 }
 
 main {
@@ -40,6 +46,65 @@ nav ul li a:hover {
   transition: 0.3s;
   background-color: rgb(60, 121, 121);
   color: black;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #333333;
+  background: linear-gradient(to bottom, #509ca7, #ffffff);
+  padding: 1rem;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #509ca7;
+}
+
+.button {
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #509ca7;
+  background-color: #fff;
+  border: 1px solid #509ca7;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button:hover {
+  color: #2a7a8c;
+  border-color: #2a7a8c;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #509ca7;
+  color: #333333;
+  text-align: center;
+  padding: 1rem;
+}
+
+.testimonio {
+  border-left: 4px solid #509ca7;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
 }
 
 /*# sourceMappingURL=estilos.css.map */

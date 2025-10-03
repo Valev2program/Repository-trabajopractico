@@ -1,0 +1,15 @@
+@use "variables" as v;
+
+body {
+  font-family: v.$fuente-principal;
+  color: v.$color-texto;
+  background: linear-gradient(to bottom, v.$color-principal, #ffffff);
+  padding: v.$padding-general;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: v.$margin-general;
+  font-family: v.$fuente-principal;
+  color: v.$color-principal;
+}

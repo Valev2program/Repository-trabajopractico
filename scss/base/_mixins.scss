@@ -1,0 +1,6 @@
+@use "variables" as v;
+
+@mixin texto-principal {
+  font-family: v.$fuente-principal;
+  color: v.$color-texto;
+}

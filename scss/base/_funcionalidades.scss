@@ -1,11 +1,15 @@
-@mixin hover-scale($scale: 1.1, $shadow: rgba(0,0,0,0.3)){
-    transition: transform 0.3s, box-shadow 0.3s; 
-    &:hover {
-        transform: scale($scale);
-        box-shadow: 0 5px 15px $shadow;
-    } 
-}
-.galery img{
-    @include hover-scale()
-}
+@use "variables" as v;
 
+.button {
+  background-color: v.$color-principal;
+  color: #fff;
+  padding: v.$padding-general;
+  border-radius: v.$border-radius;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: v.$color-secundario;
+  }
+}
